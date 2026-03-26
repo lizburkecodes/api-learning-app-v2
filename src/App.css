@@ -5,9 +5,14 @@
 }
 
 .top-bar {
-  padding: 32px;
   border-bottom: 1px solid #e2e8f0;
   background: white;
+}
+
+.top-bar > * {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 32px;
 }
 
 .title-group h1 {
@@ -26,7 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .step-link {
@@ -76,6 +81,243 @@
 }
 
 .page-content {
-  max-width: 960px;
-  padding: 40px 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 40px;
+}
+
+/* Lesson Layout */
+.lesson-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.lesson-header h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.lesson-intro {
+  margin: 14px 0 0;
+  max-width: 1200px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.lesson-card {
+  padding: 36px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.lesson-card h3 {
+  margin-top: 10px;
+}
+
+.lesson-card p,
+.lesson-card li {
+  color: #1e293b;
+}
+
+.lesson-card ul {
+  padding-left: 22px;
+}
+
+/* What is an API page */
+.api-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0 32px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  flex-wrap: wrap;
+}
+
+.flow-box {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  font-weight: 700;
+}
+
+.flow-arrow {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0 28px;
+}
+
+.example-card {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.example-card h4 {
+  margin: 0 0 8px;
+}
+
+.request-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0 32px;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Anatomy of Request page */
+.request-builder {
+  margin-top: 20px;
+}
+
+.request-top-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.request-method,
+.request-url {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: white;
+  color: #0f172a;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.request-method {
+  font-weight: 700;
+}
+
+.request-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.request-panel {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.request-panel h4 {
+  margin: 0 0 8px;
+}
+
+.request-panel-muted {
+  opacity: 0.65;
+}
+
+.mini-code {
+  display: inline-block;
+  margin: 8px 0 0;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #e2e8f0;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.mini-code-block {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #0b1730;
+  overflow-x: auto;
+}
+
+.mini-code-block p {
+  margin: 0;
+  color: #e2e8f0;
+  font-family: monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.mini-code-block pre {
+  margin: 0;
+  color: #e2e8f0;
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.example-box {
+  margin-top: 8px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.example-box pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: monospace;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+@media (max-width: 700px) {
+  .request-panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .request-panel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
