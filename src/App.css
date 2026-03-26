@@ -109,7 +109,7 @@
 }
 
 .lesson-card {
-  padding: 36px;
+  padding: 28px;
   border: 1px solid #e2e8f0;
   border-radius: 24px;
   background: white;
@@ -117,7 +117,7 @@
 }
 
 .lesson-card h3 {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .lesson-card p,
@@ -288,7 +288,7 @@
   margin: 0;
   color: #e2e8f0;
   font-family: monospace;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   white-space: pre;
 }
@@ -319,5 +319,52 @@
 @media (max-width: 1000px) {
   .request-panel-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Anatomy of Response page */
+.response-top-row {
+  margin-bottom: 20px;
+}
+
+.response-selector {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: white;
+  color: #0f172a;
+  font: inherit;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.response-panel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.response-panel {
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.response-panel h4 {
+  margin: 0 0 8px;
+}
+
+@media (max-width: 1000px) {
+  .response-panel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .response-panel-grid {
+    grid-template-columns: 1fr;
   }
 }
