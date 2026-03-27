@@ -7,10 +7,10 @@ function AnatomyOfResponse() {
   const responseExamples: Record<string, string> = {
     success: `200 OK
 Content-Type: application/json
-X-RateLimit-Remaining: 42
+X-RateLimit-Remaining: 55
 
 {
-  "id": 42,
+  "id": 101,
   "name": "mock wahlberg",
   "email": "mock@example.com"
 }`,
@@ -79,7 +79,7 @@ Content-Type: application/json
           </p>
           <div className="mini-code-block">
             <pre>{`Content-Type: application/json
-X-RateLimit-Remaining: 42`}</pre>
+X-RateLimit-Remaining: 55`}</pre>
           </div>
         </article>
 
@@ -90,7 +90,7 @@ X-RateLimit-Remaining: 42`}</pre>
           </p>
           <div className="mini-code-block">
             <pre>{`{
-  "id": 42,
+  "id": 101,
   "name": "mock wahlberg",
   "email": "mock@example.com"
 }`}</pre>
