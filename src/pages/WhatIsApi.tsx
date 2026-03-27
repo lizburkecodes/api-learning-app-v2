@@ -374,8 +374,7 @@ Errors types: api_error, card_error, idempotency_error, invalid_request_error`}<
 
             <h3>What to remember</h3>
             <p>
-                APIs are the foundation of how modern software systems connect, share
-                data, and build on top of each other.
+                APIs are how modern software systems communicate — but you don't master them by memorizing endpoints. You learn APIs by reading documentation, experimenting, and figuring out what works.
             </p>
         </LessonLayout>
     )

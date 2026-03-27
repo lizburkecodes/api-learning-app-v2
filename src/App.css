@@ -659,3 +659,32 @@
     grid-template-columns: 1fr;
   }
 }
+
+.scenario-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.scenario-tab {
+  padding: 10px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: white;
+  color: #1e293b;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.scenario-tab:hover {
+  border-color: #2563eb;
+}
+
+.scenario-tab.active {
+  background: #dbeafe;
+  border-color: #2563eb;
+  color: #1d4ed8;
+}

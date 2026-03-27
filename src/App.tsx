@@ -18,7 +18,7 @@ function App() {
     <div className="app-shell">
       <header className="top-bar">
         <div className="title-group">
-          <h1>Learn APIs</h1>
+          <h1>API Fundamentals</h1>
           <p>Understand how APIs work, what requests and responses contain, and how to read them.</p>
         </div>
 
