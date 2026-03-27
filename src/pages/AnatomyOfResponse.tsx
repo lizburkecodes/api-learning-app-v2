@@ -16,7 +16,6 @@ X-RateLimit-Remaining: 55
 }`,
     unauthorized: `401 Unauthorized
 Content-Type: application/json
-WWW-Authenticate: Bearer
 
 {
   "error": "Invalid API key"

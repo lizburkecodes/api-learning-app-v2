@@ -5,26 +5,26 @@ function AnatomyOfRequest() {
   const [method, setMethod] = useState('GET')
 
   const requestExamples: Record<string, string> = {
-    GET: `GET /users?role=admin
-Authorization: Bearer token_here`,
+    GET: `GET /users
+X-Api-Key: your_api_key_here`,
     POST: `POST /users
 Content-Type: application/json
-Authorization: Bearer token_here
+X-Api-Key: your_api_key_here
 
 {
   "name": "mock wahlberg",
   "email": "mock.wahlberg@example.com"
 }`,
-    PUT: `PUT /users/42
+    PUT: `PUT /users/101
 Content-Type: application/json
-Authorization: Bearer token_here
+X-Api-Key: your_api_key_here
 
 {
   "name": "mock wahlberg",
   "email": "updated@example.com"
 }`,
-    DELETE: `DELETE /users/42
-Authorization: Bearer token_here`,
+    DELETE: `DELETE /users/101
+X-Api-Key: your_api_key_here`,
   }
 
   return (
@@ -91,7 +91,7 @@ Authorization: Bearer token_here`,
             </p>
             <div className="mini-code-block">
               <p>Content-Type: application/json</p>
-              <p>Authorization: Bearer token_here</p>
+              <p>X-Api-Key: your_api_key_here</p>
             </div>
           </article>
 
