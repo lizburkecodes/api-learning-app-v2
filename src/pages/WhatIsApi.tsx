@@ -95,12 +95,12 @@ function WhatIsApi() {
 
             <h3>Common API styles</h3>
             <ul>
-                <li><strong>REST</strong> — uses standard HTTP methods like GET and POST</li>
+                <li><strong>REST</strong> — organizes data around resources and uses HTTP methods like GET, POST, PUT, and DELETE</li>
                 <li><strong>GraphQL</strong> — lets you request exactly the data you need</li>
                 <li><strong>Webhooks</strong> — send data to you when something happens</li>
             </ul>
 
-            <h3>Common REST pattern</h3>
+            <h3>RESTful endpoint pattern</h3>
             <p>
                 In many REST APIs, endpoints represent either a collection of resources or a
                 single resource.
@@ -132,7 +132,7 @@ function WhatIsApi() {
                 <pre>{`GET /users        → get all users
 GET /users/42     → get one specific user
 POST /users       → create a new user
-PUT /users/42     → replace one specific user
+PUT /users/42     → update one specific user
 DELETE /users/42  → delete one specific user`}</pre>
             </div>
 
