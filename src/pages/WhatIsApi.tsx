@@ -263,7 +263,7 @@ Always match both the <strong>type</strong> and the <strong>expected format</str
                     <p>
                         <strong>Stripe Docs:</strong>{' '}
                         <a
-                            href="https://docs.stripe.com/api/payment_intents/create?lang=node"
+                            href="https://docs.stripe.com/api/payment_intents/create"
                             target="_blank"
                             rel="noreferrer"
                             style={{ color: '#eceef1' }}
@@ -376,6 +376,12 @@ Errors types: api_error, card_error, idempotency_error, invalid_request_error`}<
             <p>
                 APIs are how modern software systems communicate — but you don't master them by memorizing endpoints. You learn APIs by reading documentation, experimenting, and figuring out what works.
             </p>
+            <div className="lesson-footer-nav">
+                <a href="/anatomy-of-request" className="next-lesson">
+                    Next → Anatomy of a Request
+                </a>
+            </div>
+
         </LessonLayout>
     )
 }
