@@ -35,7 +35,7 @@ function WhatIsApi() {
 
     return (
         <LessonLayout
-            title="What Is an API?"
+            title="What is an API?"
             intro="An API is a way for software systems to communicate. Before diving into technical details, it helps to understand the basic idea and where APIs show up in real life."
         >
             <h3>A simple definition</h3>
